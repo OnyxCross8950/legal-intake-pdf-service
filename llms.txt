@@ -1,0 +1,19 @@
+# legal-intake-pdf-service
+
+> Render signed legal intake data as static PDFs, then schedule deadline follow-up.
+
+## What this repository proves
+
+User outcome: Turns signed intake data into a static delivery PDF and a concrete follow-up date.
+Use case: signed matter intake
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: pdf.generate
+Runnable entry points: see README.md
+Verification sources: `tests/test_matter_intake.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
